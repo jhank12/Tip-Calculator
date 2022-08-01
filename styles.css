@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4b75dd;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+}
+
+input {
+  border: 2px solid #b5c9ff;
+  background-color: rgba(181, 201, 255, 0.3137254902);
+  color: #4b75dd;
+  height: 67px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 22px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  color: #4b75dd;
+  cursor: pointer;
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 15px;
+}
+
+main {
+  background-color: #fafafa;
+  border-radius: 30px;
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  max-width: 810px;
+  min-width: 700px;
+  width: 55%;
+}
+
+.userInputs {
+  color: #4b75dd;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+}
+.userInputs input {
+  margin-top: 10px;
+}
+
+.tipBtnGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 135px);
+  gap: 8px;
+  margin-top: 10px;
+}
+.tipBtnGrid button {
+  background-color: rgba(181, 201, 255, 0.3137254902);
+  border: 2px solid #b5c9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+}
+.tipBtnGrid button:hover {
+  background-color: #4b75dd;
+  border: none;
+  color: #fafafa;
+}
+
+.formCalculations {
+  background-color: #4b75dd;
+  border-radius: 30px;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  flex: 1.3;
+  justify-content: space-between;
+  padding: 25px 35px;
+}
+
+.totalsRowWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.totalsRow {
+  display: flex;
+  justify-content: space-between;
+}
+.totalsRow p {
+  color: #b5c9ff;
+  font-size: 18px;
+}
+
+#resetButton {
+  border-radius: 50px;
+}
+
+@media (max-width: 830px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 14px;
+  }
+  main {
+    flex-direction: column;
+    min-width: 360px;
+    width: 360px;
+  }
+  #resetButton {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
