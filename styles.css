@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
 }
 
 h1 {
@@ -39,6 +40,7 @@ input {
   font-size: 22px;
   border-radius: 20px;
   padding-left: 20px;
+  width: 100%;
 }
 
 button {
@@ -55,6 +57,7 @@ main {
   border-radius: 30px;
   display: flex;
   gap: 50px;
+  margin: 0 auto;
   padding: 40px;
   max-width: 810px;
   min-width: 700px;
@@ -74,9 +77,10 @@ main {
 
 .tipBtnGrid {
   display: grid;
-  grid-template-columns: repeat(2, 135px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   margin-top: 10px;
+  width: 100%;
 }
 .tipBtnGrid button {
   background-color: rgba(181, 201, 255, 0.3137254902);
@@ -85,6 +89,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 62px;
+  width: 100%;
 }
 .tipBtnGrid button:hover {
   background-color: #4b75dd;
@@ -138,8 +143,7 @@ main {
   }
   main {
     flex-direction: column;
-    min-width: 360px;
-    width: 360px;
+    min-width: 250px;
   }
   #resetButton {
     margin-top: 20px;

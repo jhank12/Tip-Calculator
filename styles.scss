@@ -1,7 +1,7 @@
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 $blue: #4b75dd;
@@ -11,191 +11,162 @@ $input-blue: #b5c9ff50;
 $dark-blue: #1554f0;
 $white: #fafafa;
 
-
 body {
-   background-color: $blue;
-   font-family: 'Kumbh Sans', sans-serif;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
+  background-color: $blue;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
 }
 
 h1 {
-   font-size: 34px;
-   
+  font-size: 34px;
 }
 
 h2 {
-   font-size: 30px;
+  font-size: 30px;
 }
 
 h3 {
-   font-size: 28px;
-   font-weight: 400;
-
+  font-size: 28px;
+  font-weight: 400;
 }
 
 p {
-   font-size: 16px;
+  font-size: 16px;
 }
 
 input {
-   border: 2px solid $light-blue;
-   background-color: $input-blue;
-   color: $blue;
-   height: 67px;
-   font-family: 'Kumbh Sans', sans-serif;
-   font-size: 22px;
-   border-radius: 20px;
-   padding-left: 20px;
+  border: 2px solid $light-blue;
+  background-color: $input-blue;
+  color: $blue;
+  height: 67px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 22px;
+  border-radius: 20px;
+  padding-left: 20px;
+  width: 100%;
 }
 
 button {
-   border-radius: 20px;
-   border: none;
-   color:  $blue;
-   cursor: pointer;
-   font-family: 'Kumbh Sans', sans-serif;
-   padding: 15px;
+  border-radius: 20px;
+  border: none;
+  color: $blue;
+  cursor: pointer;
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 15px;
 }
 
 main {
-   background-color: $white;
-   border-radius: 30px;
-   display: flex;
-   gap: 50px;
-   // margin: 0 auto;
-   padding: 40px;
-   max-width: 810px;
-   min-width: 700px;
-   width: 55%;
+  background-color: $white;
+  border-radius: 30px;
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 810px;
+  min-width: 700px;
+  width: 55%;
 
-   // width: 790px;
-
-   
 
 }
 
-
-
 .userInputs {
-   // background-color: red;
-   color: $blue;
-   display: flex;
-      flex-direction: column;
-      gap: 25px;
-      // justify-content: space-between/;
-      flex: 1;
+  color: $blue;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
 
-   // & > * {
-   //    width: 100%;
-   // }
 
-   input {
-      margin-top: 10px;
-      // width: 100%;
-   }
+  input {
+    margin-top: 10px;
+    
+  }
 }
 
 .tipBtnGrid {
-   display: grid;
-   grid-template-columns: repeat(2, 135px);
-   gap: 8px;
-   margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
 
+  button {
+    background-color: $input-blue;
+    border: 2px solid $light-blue;
 
-   button {
-      background-color: $input-blue;
-      border: 2px solid $light-blue;
-      
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+    width: 100%;
 
-      &:hover {
-         background-color: $blue;
-         border: none;
-         color: $white;
-
-      }
-   }
+    &:hover {
+      background-color: $blue;
+      border: none;
+      color: $white;
+    }
+  }
 }
 
-
-
 .formCalculations {
-   background-color: $blue;
-   border-radius: 30px;
-   color: $white;
-   display: flex;
-   flex-direction: column;
-   flex: 1.3;
-   justify-content: space-between;
-   padding: 25px 35px;
-
-   
+  background-color: $blue;
+  border-radius: 30px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  flex: 1.3;
+  justify-content: space-between;
+  padding: 25px 35px;
 }
 
 .totalsRowWrap {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .totalsRow {
-   display: flex;
-   // flex-direction: row;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
- 
-
-   p {
-      color: $light-blue;
-      font-size: 18px;
-   }
-
-   
+  p {
+    color: $light-blue;
+    font-size: 18px;
+  }
 }
 
 #resetButton {
-   border-radius: 50px;
+  border-radius: 50px;
 }
 
-
 @media (max-width: 830px) {
+  h1 {
+    font-size: 30px;
+  }
 
-   h1 {
-      font-size: 30px;
-      
-   }
-   
-   h2 {
-      font-size: 26px;
-   }
-   
-   h3 {
-      font-size: 24px;
-      font-weight: 400;
-   
-   }
-   
-   p {
-      font-size: 14px;
-   }
+  h2 {
+    font-size: 26px;
+  }
 
-   input {
-      // font-size: 18px;
-   }
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
 
-   main {
-      flex-direction: column;
-      min-width: 360px;
-      width: 360px;
-   }
+  p {
+    font-size: 14px;
+  }
 
-   #resetButton {
-      margin-top: 20px;
-   }
+  main {
+    flex-direction: column;
+    min-width: 250px;
+  }
+
+  #resetButton {
+    margin-top: 20px;
+  }
 }
